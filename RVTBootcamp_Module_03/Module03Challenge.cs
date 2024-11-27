@@ -200,7 +200,7 @@ namespace RVTBootcamp_Module_03
 
             foreach (string FurSets_String in FurSets_Array)
             {
-                string[] rowArray = FurSets_String.Split(',');
+                String[] rowArray = FurSets_String.Split(new[] { "," }, 3, StringSplitOptions.RemoveEmptyEntries); ;
                 furSets_Items.Add(rowArray);
             }
             return furSets_Items;
